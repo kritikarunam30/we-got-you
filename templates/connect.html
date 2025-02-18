@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <h2 class="h2">Connect with Friends and Professionals</h2>
+    <div class="row">
+        <div class="col-6 col-sm-3" style="margin-bottom: 20px">
+            <img src="{{ url_for('static', filename='images/grid11.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+        </div>
+        <div class="col-6 col-sm-3" style="margin-bottom: 20px">
+            <img src="{{ url_for('static', filename='images/grid12.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+        </div>
+        <div class="col-6 col-sm-3" style="margin-bottom: 20px">
+            <img src="{{ url_for('static', filename='images/grid13.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+        </div>
+        <div class="col-6 col-sm-3" style="margin-bottom: 20px">
+            <img src="{{ url_for('static', filename='images/grid14.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+        </div>
+
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+        <div class="col-6 col-sm-3" style="margin-bottom: 20px">
+            <img src="{{ url_for('static', filename='images/grid15.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+        </div>
+        <div class="col-6 col-sm-3" style="margin-bottom: 20px">
+            <img src="{{ url_for('static', filename='images/grid16.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+        </div>
+        <div class="col-6 col-sm-3" style="margin-bottom: 20px">
+            <img src="{{ url_for('static', filename='images/grid17.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+        </div>
+        <div class="col-6 col-sm-3" style="margin-bottom: 20px">
+            <img src="{{ url_for('static', filename='images/grid18.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+        </div>
+
+
+      </div>
+
+
+{% endblock %}

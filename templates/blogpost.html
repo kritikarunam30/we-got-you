@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Blog Post
+{% endblock %}
+
+{% block main %}
+    <h2 class="h2">Stay Updated with the Latest Global Insights on Mental Health </h2>
+    <div class="container row-gap-50">
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row gap-50">
+            <div class="col-6">
+                <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/aboutme.html">
+                    <img src="{{ url_for('static', filename='images/grid1.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/books.html">
+                    <img src="{{ url_for('static', filename='images/grid2.jpg') }}" class="rounded img-fluid" alt="Article 2" style="height: auto; width: auto; object-fit: cover;">
+                </a>
+            </div>
+
+            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+            <div class="row gap-50">
+                <div class="col-6 col-md-4">
+                    <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/quotes.html">
+                        <img src="{{ url_for('static', filename='images/grid3.jpg') }}" class="rounded img-fluid" style="height:auto; width: auto; object-fit: contain;" alt="Article 3">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4">
+                    <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/blog.html">
+                        <img src="{{ url_for('static', filename='images/grid4.jpg') }}" class="rounded img-fluid" alt="Article 4" style="height:auto; width: auto; object-fit: cover;">
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/thanks.html">
+                        <img src="{{ url_for('static', filename='images/grid5.jpg') }}" class="rounded img-fluid" style="height: auto; width: auto; object-fit: cover;" alt="Article 5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

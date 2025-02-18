@@ -1,0 +1,57 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #225177;
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+}
+/* Add top and bottom gaps for all containers */
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add gaps between rows */
+.row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* For blogpost, games... */
+.navbar-nav.me-auto.mt-2 {
+    /* Your styles here */
+    font-weight: 500;
+    font-size: 20px;
+    height: 50px;
+    justify-content: center;
+    letter-spacing: normal;
+    line-height: 1.33;
+    outline: none;
+    position: relative;
+    text-decoration: none
+
+}
+/* For register, login... */
+.navbar-nav.ms-auto.mt-2
+{
+    font-weight: 500;
+}
+
+/* For headings */
+.h2
+{
+    color: #225177;
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+/* For row gap in connect*/
+.row {
+    margin-bottom: 50px; /* Adjust spacing */
+}
