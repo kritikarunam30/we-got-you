@@ -16,8 +16,15 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
+# Create the SQLite database from schema.sql on first run
+if not os.path.exists("user.db"):
+    open("user.db", "w").close()
+
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///user.db")
+
+with open("schema.sql") as schema:
+    db.execute(schema.read())
 
 
 @app.after_request
@@ -96,7 +103,6 @@ def login():
             rows[0]["hash"], request.form.get("password")
         ):
             return apology("invalid username and/or password", 403)
-        print(rows)  # Debugging: print the query result
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]

@@ -55,3 +55,108 @@ nav .navbar-brand .blue
 .row {
     margin-bottom: 50px; /* Adjust spacing */
 }
+
+/* For blogpost images */
+.blog-img {
+    object-fit: cover;
+}
+
+/* For games */
+.nav-pills .nav-link.active {
+    background-color: #29bca6;
+}
+
+.nav-pills .nav-link {
+    color: #225177;
+    font-weight: 500;
+}
+
+.game-grid {
+    display: grid;
+    border: 2px solid #225177;
+    width: fit-content;
+}
+
+.game-grid .cell {
+    position: relative;
+    border: 1px solid #adb5bd;
+}
+
+.game-grid input {
+    border: none;
+    caret-color: #29bca6;
+    color: #225177;
+    font-weight: bold;
+    height: 100%;
+    outline: none;
+    text-align: center;
+    width: 100%;
+}
+
+.game-grid input:focus {
+    background-color: #e3f7f4;
+}
+
+.game-grid input.right {
+    background-color: #d1f2e0;
+}
+
+.game-grid input.wrong {
+    background-color: #f8d7da;
+    color: #b02a37;
+}
+
+.crossword-grid .cell {
+    height: 64px;
+    width: 64px;
+}
+
+.crossword-grid input {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.crossword-grid .blocked {
+    background-color: #225177;
+}
+
+.crossword-grid .cell-number {
+    font-size: 12px;
+    left: 4px;
+    position: absolute;
+    top: 1px;
+}
+
+.sudoku-grid {
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.sudoku-grid .cell {
+    height: 42px;
+    width: 42px;
+}
+
+.sudoku-grid input {
+    font-size: 20px;
+}
+
+.sudoku-grid input.given {
+    background-color: #f1f3f5;
+    color: #212529;
+    cursor: default;
+}
+
+.sudoku-grid .box-right {
+    border-right: 2px solid #225177;
+}
+
+.sudoku-grid .box-bottom {
+    border-bottom: 2px solid #225177;
+}
+
+@media (max-width: 420px) {
+    .sudoku-grid .cell {
+        height: 34px;
+        width: 34px;
+    }
+}

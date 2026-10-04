@@ -1,11 +1,51 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Index
+    Games
 {% endblock %}
 
 {% block main %}
     <h2 class="h2">What would you like to Play, Crossword or Sudoku?</h2>
 
+    <ul class="nav nav-pills justify-content-center mb-4" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#crossword-tab" type="button" role="tab">Crossword</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#sudoku-tab" type="button" role="tab">Sudoku</button>
+        </li>
+    </ul>
 
+    <div class="tab-content">
+        <!-- Crossword -->
+        <div class="tab-pane fade show active" id="crossword-tab" role="tabpanel">
+            <div class="d-flex flex-wrap justify-content-center gap-5">
+                <div id="crossword" class="game-grid crossword-grid"></div>
+                <div class="text-start">
+                    <h5>Across</h5>
+                    <ol id="clues-across" class="list-unstyled"></ol>
+                    <h5>Down</h5>
+                    <ol id="clues-down" class="list-unstyled"></ol>
+                </div>
+            </div>
+            <div class="mt-4">
+                <button class="btn btn-primary" id="crossword-check" type="button">Check</button>
+                <button class="btn btn-outline-secondary" id="crossword-reveal" type="button">Reveal</button>
+                <button class="btn btn-outline-secondary" id="crossword-clear" type="button">Clear</button>
+            </div>
+            <p class="mt-3 fw-semibold" id="crossword-message" aria-live="polite"></p>
+        </div>
+
+        <!-- Sudoku -->
+        <div class="tab-pane fade" id="sudoku-tab" role="tabpanel">
+            <div id="sudoku" class="game-grid sudoku-grid mx-auto"></div>
+            <div class="mt-4">
+                <button class="btn btn-primary" id="sudoku-check" type="button">Check</button>
+                <button class="btn btn-outline-secondary" id="sudoku-new" type="button">New Game</button>
+            </div>
+            <p class="mt-3 fw-semibold" id="sudoku-message" aria-live="polite"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='games.js') }}"></script>
 {% endblock %}

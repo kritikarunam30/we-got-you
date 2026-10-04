@@ -5,42 +5,39 @@
 {% endblock %}
 
 {% block main %}
-    <h2 class="h2">Stay Updated with the Latest Global Insights on Mental Health </h2>
-    <div class="container row-gap-50">
+    <h2 class="h2">Stay Updated with the Latest Global Insights on Mental Health</h2>
+    <div class="container">
         <!-- Columns are always 50% wide, on mobile and desktop -->
-        <div class="row gap-50">
+        <div class="row">
             <div class="col-6">
-                <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/aboutme.html">
-                    <img src="{{ url_for('static', filename='images/grid1.jpg') }}" class="rounded img-fluid" alt="Article 1" style="height: auto; width: auto; object-fit: cover;">
+                <a href="https://www.who.int/campaigns/world-mental-health-day" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='images/grid1.jpg') }}" class="rounded img-fluid blog-img" alt="World Mental Health Day">
                 </a>
             </div>
             <div class="col-6">
-                <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/books.html">
-                    <img src="{{ url_for('static', filename='images/grid2.jpg') }}" class="rounded img-fluid" alt="Article 2" style="height: auto; width: auto; object-fit: cover;">
+                <a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-of-adolescents" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='images/grid2.jpg') }}" class="rounded img-fluid blog-img" alt="Why are teenagers today more stressed and anxious?">
                 </a>
             </div>
+        </div>
 
-            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-            <div class="row gap-50">
-                <div class="col-6 col-md-4">
-                    <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/quotes.html">
-                        <img src="{{ url_for('static', filename='images/grid3.jpg') }}" class="rounded img-fluid" style="height:auto; width: auto; object-fit: contain;" alt="Article 3">
-                    </a>
-                </div>
-                <div class="col-6 col-md-4">
-                    <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/blog.html">
-                        <img src="{{ url_for('static', filename='images/grid4.jpg') }}" class="rounded img-fluid" alt="Article 4" style="height:auto; width: auto; object-fit: cover;">
-                    </a>
-                </div>
-
-                <div class="col-6 col-md-4">
-                    <a href="https://didactic-space-fiesta-wrgvj744gjwp39vwx-8080.app.github.dev/thanks.html">
-                        <img src="{{ url_for('static', filename='images/grid5.jpg') }}" class="rounded img-fluid" style="height: auto; width: auto; object-fit: cover;" alt="Article 5">
-                    </a>
-                </div>
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+            <div class="col-6 col-md-4">
+                <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='images/grid3.jpg') }}" class="rounded img-fluid blog-img" alt="Surround yourself with everything good for your mental health">
+                </a>
+            </div>
+            <div class="col-6 col-md-4">
+                <a href="https://www.who.int/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='images/grid4.jpg') }}" class="rounded img-fluid blog-img" alt="What is stress and anxiety? Practices and methods to prevent it">
+                </a>
+            </div>
+            <div class="col-6 col-md-4">
+                <a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='images/grid5.jpg') }}" class="rounded img-fluid blog-img" alt="The secret to being happy and healthy in mind and body">
+                </a>
             </div>
         </div>
     </div>
-
-
 {% endblock %}
